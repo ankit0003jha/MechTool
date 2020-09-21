@@ -1,0 +1,357 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>kiTaN.com (handtool)</title>
+</head>
+
+<body>
+  <div class="p-2 mb-1 bg-success text-white"></div>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="{% static 'images/logor.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+        loading="lazy">
+      MechTooL
+      <img src="{% static 'images/tool1.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+        loading="lazy">
+    </a>
+    {% if user.is_authenticated %}
+    <h3>
+      <p style="text-align:center" class="text-outline-dark">Hello, {{ user.first_name }}</p>
+    </h3>
+    {% endif %}
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </nav>
+  </div>
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/login"><button type="button" class="btn btn-primary">Home</button>
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/handtool"><button type="button" class="btn btn-success">Hand Tool</button></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/powertool"><button type="button" class="btn btn-primary">Power Tool</button></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/measuringtool"><button type="button" class="btn btn-primary">Measuring
+              Tool</button></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/handtool"><button type="button" class="btn btn-danger">Back</button></a>
+        </li>
+
+
+
+      </ul>
+
+      <div class="my-2">
+
+        <a class="nav-link" href="/"></a><button class="btn btn-danger">
+          Logout</button></a>
+
+
+      </div>
+
+
+
+    </div>
+  </nav>
+
+
+  <h1>
+    <p style="text-align:center">TYPES OF HAMMERS</p>
+  </h1>
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/mallets.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">MALLET</p>
+              </h5>
+              <p class="card-text">A mallet is a kind of hammer, often made of rubber or sometimes wood, that is
+                smaller
+                than a maul or beetle, and usually has a relatively large head.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/mallet" role="button">Detail</a>
+                  <a class="btn btn-danger"
+                    href="https://www.amazon.in/GIZMO-Tubular-Handle-Curved-Hammer/dp/B08911MNF4/ref=asc_df_B08911MNF4/?tag=googleshopdes-21&linkCode=df0&hvadid=396982605774&hvpos=&hvnetw=g&hvrand=3951743856079972315&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9075215&hvtargid=pla-915179561995&psc=1&ext_vrnc=hi"
+                    role="button">Buy</a>
+                </div>
+                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=TaVmEn_Bces" role="button">video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'images/claw.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">CLAW HAMMER</p>
+              </h5>
+              <p class="card-text">A claw hammer is a tool primarily used for driving nails into, or pulling nails from,
+                some other object. Generally, a claw hammer is associated with woodworking.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/claw_hammer" role="button">Detail</a>
+                  <a class="btn btn-danger"
+                    href="https://www.industrybuying.com/hand-operated-machines-stanly-HAN.HAN.91520102/?utm_source=Google&utm_medium=PLA&utm_campaign=PLA_New_Hand_Tools&gclid=EAIaIQobChMI6pqu0efR6wIVEw4rCh34Bw5BEAYYCSABEgILyvD_BwE"
+                    role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=uCplzSbsqtI" role="button">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/frames.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">FRAMING HAMMER</p>
+              </h5>
+              <p class="card-text">Framing hammers, used for framing wooden houses, are heavy duty rip hammers with a
+                straight claw.
+                The head will be made of steel and the handle of wood.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/framing_hammer"
+                    role="button">Detail</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/mallet" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/mallet" role="button">Video</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/sledge.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">SLEDGE HAMMER</p>
+              </h5>
+
+              <p class="card-text">A sledgehammer is a tool with a large, flat, often metal head, attached to a long
+                handle. The long handle combined with a heavy head allows the sledgehammer to gather momentum during a
+                swing
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/sledgehammer" role="button">Detail</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/pliers" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/pliers" role="button">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'images/tack.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">TACK HAMMER</p>
+              </h5>
+
+              <p class="card-text">An upholstery hammer (also called a tack hammer) is a lightweight hammer used for
+                securing upholstery fabric to furniture frames using small nails. face has a split surface to make its
+                magnetic hold stronger.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/Upholstery_hammer"
+                    role="button">Detail</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/screwdriver" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/screwdriver" role="button">Video</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{% static 'images/club.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">CLUB HAMMER</p>
+              </h5>
+              <p class="card-text">This is used for hitting cold chisels to break masonry or simply to bash things up
+                like a tiny sledge hammer.
+                They are usually double faced and have a wood or resin handle.</p>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/club_hammer" role="button">Detail</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/wrench" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/wrench" role="button">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/ball peen.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">BALL-PEEN HAMMER</p>
+              </h5>
+              <p class="card-text">A ball-peen or ball pein hammer, also known as a machinist's hammer, is a type of
+                peening hammer used in metalworking. It has two heads, one flat and the other, called the peen, rounded.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/ball-peen_hammer"
+                    role="button">Details</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/wrench" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/wrench" role="button">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/scaling.jpg' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">SCALING HAMMER</p>
+              </h5>
+              <p class="card-text">These hammers are used for removing scale and build up from boilers and huge pipes.
+                Both faces on the head are small and delicate. it is likely used to remove material from substance.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/scaling_hammer"
+                    role="button">Details</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/saw" role="button">Buy</a>
+
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/saw" role="button">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="{% static 'images/softhammer.webp' %}">
+            <div class="card-body">
+              <h5>
+                <p style="text-align:center">SOFT-FACED HAMMER</p>
+              </h5>
+              <p class="card-text">Soft-faced or deadblow mallets have faces made of materials such as plastics,
+                including nylon, natural rubber or tightly wound rawhide, or soft metals such as copper, aluminium,
+                brass or lead.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                  <a class="btn btn-success" href="https://en.wikipedia.org/wiki/soft-faced_hammer"
+                    role="button">Details</a>
+                  <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/Punch_(tool)" role="button">Buy</a>
+
+                </div>
+                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Punch_(tool)" role="button">video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <p style="text-align:center"><a class="btn btn-info "
+        href="https://www.garagetooladvisor.com/hand-tools/types-of-hand-planes-and-their-uses/" target="_blank"
+        role="button">Others Types Of Hammer</a>
+    </p><br>
+
+
+    <div class="container">
+      <p style="text-align:center"><a class="btn btn-dark btn-lg btn-block" href="/handtool" role="button">BACK</a></p>
+
+
+    </div>
+
+    <div class="container">
+      <footer class="blog-footer">
+        <p>
+        <p style="text-align:center">This website is built  by <a href="https://www.facebook.com/ankit.jha.98434" target="_blank">Ankit
+            jha</a>.
+        </p>
+        </p>
+        <p>
+         
+          <a href="#">
+            <p style="text-align:center">Back to top</p>
+          </a>
+          <a href="/login">
+            <p style="text-align:center">Back to Home</p>
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

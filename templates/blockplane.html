@@ -1,0 +1,310 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>kiTaN.com (handtool)</title>
+</head>
+
+<body>
+    <div class="p-2 mb-1 bg-success text-white"></div>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'images/logor.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+            MechTooL
+            <img src="{% static 'images/tool1.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+        </a>
+        {% if user.is_authenticated %}
+        <h3>
+            <p style="text-align:center" class="text-outline-dark">Hello, {{ user.first_name }}</p>
+        </h3>
+        {% endif %}
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    </div>
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login"><button type="button" class="btn btn-primary">Home</button>
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/handtool"><button type="button" class="btn btn-success">Hand
+                            Tool</button></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/powertool"><button type="button" class="btn btn-primary">Power
+                            Tool</button></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/measuringtool"><button type="button" class="btn btn-primary">Measuring
+                            Tool</button></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/handtool"><button type="button" class="btn btn-danger">Back</button></a>
+                </li>
+
+
+
+            </ul>
+
+            <div class="my-2">
+
+                <a class="nav-link" href="/"><button class="btn btn-danger">
+                        Logout</button></a>
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+
+    <h1>
+        <p style="text-align:center">TYPES OF PLANE</p>
+    </h1>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/scrub.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">SCRUB PLANE</p>
+                            </h5>
+                            <p class="card-text">Originally designed for ripping work, this plane removes material
+                                quickly, allowing you to switch to your bench planes once an oversized board is trimmed
+                                down to size.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/scrub_plane"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger"
+                                        href="https://www.amazon.in/GIZMO-Tubular-Handle-Curved-Hammer/dp/B08911MNF4/ref=asc_df_B08911MNF4/?tag=googleshopdes-21&linkCode=df0&hvadid=396982605774&hvpos=&hvnetw=g&hvrand=3951743856079972315&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9075215&hvtargid=pla-915179561995&psc=1&ext_vrnc=hi"
+                                        role="button">Buy</a>
+
+                                </div>
+                                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=TaVmEn_Bces"
+                                    role="button">video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/bench.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">BENCH PLANE</p>
+                            </h5>
+                            <p class="card-text">The bench plane has three jobs in the woodshop: to straighten the wood,
+                                to smooth it and to remove it. It sounds so simple when you put it that way</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/benchplane_(tool)"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger"
+                                        href="https://www.industrybuying.com/hand-operated-machines-stanly-HAN.HAN.91520102/?utm_source=Google&utm_medium=PLA&utm_campaign=PLA_New_Hand_Tools&gclid=EAIaIQobChMI6pqu0efR6wIVEw4rCh34Bw5BEAYYCSABEgILyvD_BwE"
+                                        role="button">Buy</a>
+
+                                </div>
+                                <a class="btn btn-primary" href="https://www.youtube.com/watch?v=uCplzSbsqtI"
+                                    role="button">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/shoulder.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">SHOULDER PLANE</p>
+                            </h5>
+                            <p class="card-text">Shoulder planes closely resemble bullnose planes in design, but measure
+                                up to eight inches in length. Much like a bullnose plane, they’re great for detail work.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/shoulder_plane"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/mallet"
+                                        role="button">Buy</a>
+
+
+                                </div>
+                                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/mallet"
+                                    role="button">Video</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/block.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">BLOCK PLANE</p>
+                            </h5>
+
+                            <p class="card-text">Generally considered the DIY go-to for its low cost and compact size, a
+                                good block plane can work wonders. They’re designed for cutting end grain, shaping, and
+                                chamfering, and can be used one-handed.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/block_plane"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/pliers"
+                                        role="button">Buy</a>
+
+                                </div>
+                                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/pliers"
+                                    role="button">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/jack.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">JACK PLANE</p>
+                            </h5>
+
+                            <p class="card-text">A jack plane is a general-purpose wood-working bench
+                                plane, used for dressing timber down to the correct size in preparation for truing
+                                edge jointing. It is usually the first plane used on rough stock,</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/jack_plane"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/screwdriver"
+                                        role="button">Buy</a>
+
+                                </div>
+                                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/screwdriver"
+                                    role="button">Video</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                            src="{% static 'images/kanna1.jpg' %}">
+                        <div class="card-body">
+                            <h5>
+                                <p style="text-align:center">KANNA(japanese-plane)</p>
+                            </h5>
+                            <p class="card-text">The pinnacle of carpentry, the fine art of Japanese woodcraft relies
+                                heavily on the kanna. These are very simplistic hand planes, consisting only of a
+                                Japanese oak body, blade, and chip breaker pin. </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn">
+                                    <a class="btn btn-success" href="https://en.wikipedia.org/wiki/Japanese_plane"
+                                        role="button">Detail</a>
+                                    <a class="btn btn-danger" href="https://en.wikipedia.org/wiki/wrench"
+                                        role="button">Buy</a>
+
+                                </div>
+                                <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/wrench"
+                                    role="button">Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p style="text-align:center"><a class="btn btn-info "
+                href="https://www.garagetooladvisor.com/hand-tools/types-of-hand-planes-and-their-uses/" target="_blank"
+                role="button">Other Types Of Plane</a>
+        </p><br>
+
+
+    </div>
+    <div class="container">
+        <p style="text-align:center"><a class="btn btn-dark btn-lg btn-block" href="/handtool" role="button">BACK</a>
+        </p>
+
+
+    </div>
+
+    <div class="container">
+        <footer class="blog-footer">
+            <p>
+            <p style="text-align:center">This website is built by <a href="https://www.facebook.com/ankit.jha.98434"  target="_blank">Ankit
+                    jha</a>.</p>
+            </p>
+            <p>
+
+                <a href="#">
+                    <p style="text-align:center">Back to top</p>
+                </a>
+                <a href="/login">
+                    <p style="text-align:center">Back to Home</p>
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
