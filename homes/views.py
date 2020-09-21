@@ -208,3 +208,6 @@ def handtool(request):
     ts = tools.objects.all()
 
     return render(request, 'handtool.html', {'ts': ts})
+
+def index(request):
+    return render(request, 'index.html')
