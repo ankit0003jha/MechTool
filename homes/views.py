@@ -12,8 +12,8 @@ from .models import Automotivetool1
 # Create your views here.
 
 
-def home(request):
-    return render(request, 'home.html', {'name': 'kiTaNs.com'})
+def index(request):
+    return render(request, 'index.html', {'name': 'kiTaNs.com'})
 
 
 def about(request):
@@ -209,5 +209,3 @@ def handtool(request):
 
     return render(request, 'handtool.html', {'ts': ts})
 
-def index(request):
-    return render(request, 'index.html')
