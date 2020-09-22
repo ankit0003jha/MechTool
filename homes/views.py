@@ -21,20 +21,6 @@ def about(request):
 
 
 def contacts(request):
-    
-    
-    if request.method == "POST":
-        name = request.POST['name']
-        email = request.POST['email']
-        phone = request.POST['phone']
-        content = request.POST['content']
-        print(name, email, phone, content)
-        if len(name)<3 or len(email)<3 or len(phone)<10 or len(content)<4 :
-            messages.error(request, 'Please fill the form correctly')
-        else:
-            Contact = contact(name=name, email=email, phone=phone, content=content)
-            Contact.save()
-            messages.success(request, name +','  + ' Your message has been succesfully sent. Thankyou for ur query ')
     return render(request, 'contact.html')
 
 
