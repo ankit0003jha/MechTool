@@ -20,10 +20,10 @@
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="{% static 'images/logor.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+            <img src="logor.jpg" width="30" height="30" class="d-inline-block align-top" alt=""
                 loading="lazy">
             MechTooL
-            <img src="{% static 'images/tool1.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt=""
+            <img src="tool1.jpg" width="30" height="30" class="d-inline-block align-top" alt=""
                 loading="lazy">
         </a>
         
@@ -94,8 +94,8 @@
 
                     <body class="text-center">
                         <form action="logins" class="form-signin" method="post">
-                            {% csrf_token %}
-                            <img class="mb-4" src="{% static 'images/logor.jpg' %}" alt="" width="72" height="72">
+
+                            <img class="mb-4" src="logor.jpg" alt="" width="72" height="72">
                             <h5 class="h3 mb-3 font-weight-normal">Please Login</h5>
                             <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20"
                                 data-validate="Type username">
@@ -136,7 +136,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="RegisterModalLabel">Get a MechTooL Account___</h5>
-                    <img src="{% static 'images/logor.jpg' %}" width="30" height="30" class="d-inline-block align-top"
+                    <img src="logor.jpg" width="30" height="30" class="d-inline-block align-top"
                         alt="" loading="lazy">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -152,7 +152,7 @@
 
                         <div class="signup-content">
                             <form action="register" method="POST" id="signup-form" class="signup-form">
-                                {% csrf_token %}
+                             
                                 <h2 class="form-title">Create account</h2>
                                 <div class="form-group">
                                     <input type="text" required class="form-input" name="first_name" id="name"
@@ -220,11 +220,11 @@
         <div class="contact1">
             <div class="container-contact1">
                 <div class="contact1-pic js-tilt" data-tilt>
-                    <img src="{% static 'images/img-01.png' %}" alt="IMG">
+                    <img src="img-01.png" alt="IMG">
                 </div>
                 <div class="container my-4 ">
                     <form method="POST" action="/contacts">
-                        {% csrf_token %}
+                 
                         <div class="form-group">
                             <label for="exampleFormControlInput1">
                                 <h4>Name</h4>
