@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'kiTaNs.urls'
+ROOT_URLCONF = 'kiTaNs.kiTaNs.urls'
 
 TEMPLATES = [
     {
