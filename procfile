@@ -1,1 +1,1 @@
-web: gunicorn kiTaNs.kiTaNs.wsgi
+echo "web: gunicorn kiTaNs.wsgi --log-file -" > Procfile
