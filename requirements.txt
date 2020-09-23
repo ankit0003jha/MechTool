@@ -9,3 +9,14 @@ psycopg2==2.8.5
 pytz==2020.1
 sqlparse==0.3.1
 whitenoise==5.2.0
+astroid==2.4.2
+autopep8==1.5.4
+colorama==0.4.3
+isort==4.3.21
+mccabe==0.6.1
+pycodestyle==2.6.0
+pylint==2.6.0
+six==1.15.0
+sqlparse==0.3.1
+toml==0.10.1
+wrapt==1.12.1
