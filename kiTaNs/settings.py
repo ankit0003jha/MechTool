@@ -28,7 +28,7 @@ SECRET_KEY = 'ui)s+z-i&)3=-$#8ncxv$vw4evw^m^1o$ahjy-8y2jd4wcl4o%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mechtool.herokuapp.com' , '127.0.0.1']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'kiTaNs.kiTaNs.urls'
+ROOT_URLCONF = 'kiTaNs.urls'
 
 TEMPLATES = [
     {
@@ -141,5 +141,16 @@ MEDIA_ROOT =os.path.join(BASE_DIR, 'media')
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
-# Activate Django-Heroku.
-django_heroku.settingd(locals())
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "loggers": {
+        "": {"handlers": ["console"], "level": "INFO"},
+        "django": {"handlers": ["console"], "level": "INFO"},
+    },
+}
+
+# Activate Django-Heroku settings except logging
+django_heroku.settings(locals(), logging=False)
