@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn kiTaNs.wsgi
+web1: gunicorn kiTaNs.wsgi
