@@ -7,7 +7,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('about', views.about, name='about'),
     path('contacts', views.contacts, name='contacts'),
-    path('login', views.login, name="login"),
+    path('home', views.home, name="home"),
     path('handtool', views.handtool, name="handtool"),
     path('machtool', views.machtool, name="machtool"),
     path('autotool', views.autotool, name="autotool"),
@@ -27,8 +27,9 @@ urlpatterns = [
     path('hatchet', views.hatchet, name="hatchet"),
     path('clamp', views.clamp, name="clamp"),
     path('register', views.register, name="register"),
-    path('logins', views.logins, name="logins"),
-    path('search', views.search, name="search")
+    path('loginuser', views.loginuser, name="loginuser"),
+    path('search', views.search, name="search"),
+    path('logoutuser', views.logoutuser, name="logoutuser")
 
     
 ]

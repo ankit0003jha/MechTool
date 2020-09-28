@@ -1,4 +1,5 @@
 {% load static %}
+{% static 'images' as baseUrl %}
 <!doctype html>
 <html lang="en">
 
@@ -52,7 +53,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/login"><button type="button" class="btn btn-primary">Home</button>
+          <a class="nav-link" href="/home"><button type="button" class="btn btn-primary">Home</button>
             <span class="sr-only">(current)</span></a>
         </li>
 
@@ -62,7 +63,7 @@
               Tool</button></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/login"><button type="button" class="btn btn-danger">Back</button></a>
+          <a class="nav-link" href="/home"><button type="button" class="btn btn-danger">Back</button></a>
         </li>
 
 
@@ -93,7 +94,7 @@
         {% for a in as %}
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{a.img.url}}">
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{baseUrl}}/{{a.img}}">
             <div class="card-body">
               <h5>
                 <p style="text-align:center">{{a.name}}</p>
@@ -143,7 +144,7 @@
                 <a href="#">
                     <p style="text-align:center">Back to top</p>
                 </a>
-                <a href="/login">
+                <a href="/home">
                     <p style="text-align:center">Back to Home</p>
                 </a>
             </p>
